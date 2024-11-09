@@ -37,7 +37,7 @@ exports.ox_target:addSphereZone({
             icon = 'fa-solid fa-book',
             label = 'Snak med Jens',
             onSelect = function()
-                lib.showContext('liste')
+                lib.showContext('blackmarket_menu')
             end
         }
     }
