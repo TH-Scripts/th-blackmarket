@@ -1,9 +1,9 @@
-fx_verison 'cerulean'
+fx_version 'cerulean'
 
 game 'gta5'
-
 author 'TH'
-
+description 'TH - Black Market'
+version '1.0.0'
 lua54 'yes'
 
 client_scripts {
