@@ -20,6 +20,66 @@ Config.Enter = {
     Target = {
         coords = vec3(265.0760, -1001.3335, -99.0087),
     }
-
-
 } 
+
+
+
+Config.Blackmarket = {
+
+    Menu = {
+        title = 'Black Market',
+
+        Kategorier = {
+            {
+                title = 'Våben',
+                description = 'Våben',
+                icon = 'fa-solid fa-gun',
+                subMenu = 'weapon',
+            },
+            {
+                title = 'Kokain',
+                description = 'Kokain',
+                icon = 'fa-solid fa-gun',
+                subMenu = 'cocaine',
+            },
+            {
+                title = 'Drugs',
+                description = 'Drugs',
+                icon = 'fa-solid fa-gun',
+                subMenu = 'drugs',
+            },
+        },
+
+        SubMenus = {
+            ['weapon'] = {
+                {
+                    title = 'Våben',
+                    description = 'Våben',
+                    icon = 'fa-solid fa-gun',
+                    item = 'weapon_pistol',
+                    price = 1000,
+                    count = 1,
+                }
+            },
+            ['cocaine'] = {
+                {
+                    title = 'Kokain',
+                    description = 'Kokain',
+                    icon = 'fa-solid fa-gun',
+                    item = 'weapon_pistol',
+                    price = 1000,
+                }
+            },
+            ['drugs'] = {
+                {
+                    title = 'Drugs',
+                    description = 'Drugs',
+                    icon = 'fa-solid fa-gun',
+                    item = 'weapon_pistol',
+                    price = 1000,   
+                }
+            },
+        }
+    }
+
+}

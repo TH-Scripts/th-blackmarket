@@ -39,7 +39,7 @@ exports.ox_target:addSphereZone({
             icon = 'fa-solid fa-book',
             label = 'Åben marketet',
             onSelect = function()
-                lib.showContext('blackmarket_menu')
+                OpenMainBlackmarketMenu()
             end
         }
     }
