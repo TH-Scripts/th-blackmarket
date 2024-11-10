@@ -44,7 +44,7 @@ function BuyItem(source, item, price, count)
     end
 
     --Add Item to User
-    local addItem = exports.ox_inventory:AddItem(xPlayer.source, item, 1, nil, nil)
+    local addItem = exports.ox_inventory:AddItem(xPlayer.source, item, count, nil, nil)
     
     return true
 

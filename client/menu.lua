@@ -10,6 +10,7 @@ function OpenMainBlackmarketMenu()
             title = v.title,
             description = v.description,
             icon = v.icon,
+            iconColor = v.iconColor,
             onSelect = function()
                 OpenBlackmarketSubMenu(v.subMenu)
             end
@@ -38,6 +39,7 @@ function OpenBlackmarketSubMenu(kategori)
             title = v.title,
             description = v.description,
             icon = v.icon,
+            iconColor = v.iconColor,
             onSelect = function()
                 lib.callback('th-blackmarket:server:buyItem', false, function(Bought)
                     if Bought then
