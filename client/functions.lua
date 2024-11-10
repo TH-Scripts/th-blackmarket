@@ -87,10 +87,15 @@ end
 -- Teleport Player
 --@param coords
 function TeleportPlayer(coords)
-
-    if not coords then
-        return
-    end
-
-    SetEntityCoords(PlayerPedId(), coords)
+    lib.callback('th-blackmarket:CheckItem', false, function(item)
+        if not item then
+            return lib.notify({title = 'Mangler item', description = 'Du har ikke det korrekte item, til at gå her ind!'})
+        end
+    
+        if not coords then
+            return
+        end
+    
+        SetEntityCoords(PlayerPedId(), coords)
+    end)
 end

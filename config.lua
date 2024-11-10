@@ -2,6 +2,8 @@ Config = {}
 
 Config.Ui = 'radial' -- 'radial' (ox_lib radial menu) -- 'text' (ox_lib textui)
 
+Config.item = 'bread'
+
 Config.Enter = {
 
     Entry = {
