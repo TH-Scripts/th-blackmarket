@@ -89,7 +89,7 @@ end
 function TeleportPlayer(coords)
     lib.callback('th-blackmarket:CheckItem', false, function(item)
         if not item then
-            return lib.notify({title = 'Mangler item', description = 'Du har ikke det korrekte item, til at gå her ind!'})
+            return lib.notify({title = 'Mangler item', description = 'Du har ikke det korrekte item, til at gå her ind!', type = 'error'})
         end
     
         if not coords then
