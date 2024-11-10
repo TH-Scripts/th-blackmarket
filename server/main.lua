@@ -13,7 +13,7 @@ lib.callback.register('th-blackmarket:server:buyItem', function(source, item, pr
 end)
 
 lib.callback.register('th-blackmarket:CheckItem', function(source)
-    local xPlayer = ESX.GetPlayerFromId(source)
+    local xPlayer       = ESX.GetPlayerFromId(source)
 
     if xPlayer.getInventoryItem(Config.item).count == 1 then
         return true
@@ -24,7 +24,7 @@ end)
 
 
 function BuyItem(source, item, price, count)
-    local xPlayer = ESX.GetPlayerFromId(source)
+    local xPlayer       = ESX.GetPlayerFromId(source)
     local xPlayerBank   = xPlayer.getAccount("bank").money
     local xPlayerMoney  = xPlayer.getAccount("money").money
 
