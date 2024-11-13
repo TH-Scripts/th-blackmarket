@@ -78,7 +78,8 @@ function BuyItem(source, id, kategori, count)
     if not addItem then
         return false
     end
-
+    
+    SendDiscord('Købt item', 'Spilleren: ' .. GetPlayerName(source) .. '. Har lige købt ' .. count .. 'x ' .. item .. '. For ' .. price .. ' DKK', 5763719)
 
     return true
 
